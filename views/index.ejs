@@ -10,7 +10,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
-<script type="text/javascript" src="./angular/signup.js"></script>
+<script type="text/javascript" src="/angular/signup.js"></script>
 <style type="text/css">
 	.container-fluid{
 		height: 800px;
@@ -46,15 +46,15 @@
 				<form class="form-group">
 					<h1>SIGN UP</h1>
 					<label class="label-control">Name: </label>
-					<input class="form-control" type="text" name="" required="" placeholder="Enter Name">
+					<input class="form-control" type="text" name="" required="" placeholder="Enter Name" ng-model="user.Name">
 					<br>
 					<label class="label-control">Email: </label>
-					<input class="form-control" type="email" name="" required="" placeholder="Enter Email id">
+					<input class="form-control" type="email" name="" required="" placeholder="Enter Email id" ng-model="user.Email">
 					<br>
 					<label class="label-control">Password: </label>
-					<input class="form-control" type="password" name="" required="" placeholder="Enter Password">
+					<input class="form-control" type="password" name="" required="" placeholder="Enter Password" ng-model="user.Password">
 					<br>
-					<input class="btn btn-primary" type="submit" name="" value="signup">
+					<input class="btn btn-primary" type="submit" name="" value="signup" ng-click="abc(user)">
 					
 				</form>
 				
